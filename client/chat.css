@@ -1,0 +1,118 @@
+html, body, #wrapper {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper { 
+	position: relative;
+}
+
+div#header {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	height: 40px;
+	width: 100%;
+}
+
+div#container {
+	position: absolute;
+	top: 40px;
+	min-height: 300px;
+	left: 0;
+	right: 0;
+	bottom: 108px;
+	padding-top: 20px;
+}
+
+div#channels {
+	position: absolute;
+	bottom: 60px;
+	height: 48px;
+	width: 100%;
+}
+
+div#footer {
+	position: absolute;
+	height: 60px;
+	bottom: 0;
+	width: 100%;
+}
+
+.no-padding-bottom {
+	padding-bottom: 2px;
+}
+
+input#message {
+	width: 99%;
+}
+
+.no-radius .navbar-inner {
+	padding-right: 0;
+	padding-left: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+ul#channels {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+ul#channels li {
+	display: inline;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+div#messages-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding-left: 2%;
+	padding-right: 1%;
+	width: 85%;
+	height: 100%;
+}
+
+div#users-container {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: right;
+	padding-right: 2%;
+	padding-left: 1px;
+	width: 15%;
+	height: 100%;
+}
+
+div#messages { 
+	padding: 5px;
+	height: 96%;
+	overflow: scroll;
+	margin-bottom: 20px;
+}
+
+div#users {
+	display: block;
+	overflow: scroll;
+	margin-bottom: 20px;
+	padding: 5px;
+	height: 96%;
+}
+
+#chatContainer {
+	margin-bottom: 20px;
+	height: 85%;
+}
+
+#messageInput {
+	margin-bottom: 0;
+}

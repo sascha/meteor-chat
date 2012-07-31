@@ -1,0 +1,65 @@
+<head>
+	<title>Super Awesome Chat</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header" class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#">
+						Super Awesome Chat
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="container">
+			<div id="messages-container">
+				<div class="well" id="messages">
+					{{> messages}}
+				</div>
+			</div>
+			<div id="users-container">
+				<div class="well" id="users">
+					{{> users}}
+				</div>
+			</div>
+		</div>
+
+		<div id="channels">
+			{{> channels}}
+		</div>
+
+		<div id="footer">
+			<div class="well no-padding-bottom">
+				{{> input}}
+			</div>
+		</div>
+	</div>
+</body>
+
+<template name="input">
+	<input id="message" type="text">
+</template>
+
+<template name="messages">
+	{{#each messages}}
+		>> {{text}}<br />
+	{{/each}}
+</template>
+
+<template name="users">
+	{{#each users}}
+		{{name}}<br />
+	{{/each}}
+</template>
+
+<template name="channels">
+	<ul id="channels">
+		{{#each channels}}
+			<li><button class="channelBtn btn btn-small {{state}}">{{name}}</button></li>
+		{{/each}}
+		<li><button id="addChannel" class="btn btn-inverse">Add Channel</button></li>
+	</ul>
+</template>
